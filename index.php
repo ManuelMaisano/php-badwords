@@ -20,8 +20,15 @@ Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
     <title>PHPbadwords</title>
 </head>
 <body>
-    <h1>Hello world</h1>
-    <p>ciao mi chiamo <?php echo $nome ?></p>
+<header>
+        <h2>Scrivi qualcosa e poi una parola da censurare</h2>
+        <form action="censure.php" method="get">
+            <input type="text" name="paragraph" placeholder="Inserisci testo">
+            <input type="text" name="censored" placeholder="Inserisci la parola che vuoi  censurare">
+            <button type="submit">Invia</button>
+        </form>
+        
+    </header>
     
 </body>
 </html>
